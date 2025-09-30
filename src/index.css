@@ -1,2 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
 @import "tailwindcss";
 @plugin "daisyui";
+
+* {
+  font-family: "Lexend", sans-serif;
+}
+header {
+  @apply w-11/12 mx-auto py-4 border-b;
+}
+a,
+button {
+  @apply cursor-pointer;
+}
+.nav-layout {
+  @apply flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-5;
+}
+.nav-links {
+  @apply border-b-3 border-transparent py-1    duration-200 hover:border-warning hover:text-warning;
+}
