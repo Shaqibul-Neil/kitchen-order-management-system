@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import Logo from "./Logo";
 
 const Navbar = () => {
@@ -7,24 +8,29 @@ const Navbar = () => {
       <nav>
         <ul className="flex gap-16 ">
           <li>
-            <a href="#" className="nav-links">
+            <NavLink to="/" className="nav-links">
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/orders" className="nav-links">
               Orders
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#" className="nav-links">
+            <NavLink to="/foods" className="nav-links">
               Foods
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#" className="nav-links">
+            <NavLink to="/tables" className="nav-links">
               Tables
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#" className="nav-links">
+            <NavLink to="/logout" className="nav-links">
               Logout
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>
