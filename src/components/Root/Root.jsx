@@ -1,5 +1,6 @@
 import { Outlet } from "react-router";
 import Navbar from "../Navbar";
+import { ToastContainer } from "react-toastify";
 
 const Root = () => {
   return (
@@ -10,6 +11,7 @@ const Root = () => {
       <main>
         <Outlet />
       </main>
+      <ToastContainer newestOnTop />
     </div>
   );
 };

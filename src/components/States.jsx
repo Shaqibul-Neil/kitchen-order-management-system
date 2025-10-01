@@ -3,7 +3,7 @@ import { useContext } from "react";
 import KitchenContext from "./Root/KitchenContext/KitchenContext";
 
 const States = () => {
-  const { ordersData, cookingItems, readyItems } = useContext(KitchenContext);
+  const { orderItems, cookingItems, readyItems } = useContext(KitchenContext);
 
   const conditionalLength = (arr) =>
     arr.length <= 9 ? `0${arr.length}` : arr.length;
@@ -17,7 +17,7 @@ const States = () => {
           <div className="text-xl text-center">
             Current Orders
             <h2 className="text-4xl lg:text-6xl font-bold">
-              {conditionalLength(ordersData)}
+              {conditionalLength(orderItems)}
             </h2>
           </div>
         </div>
