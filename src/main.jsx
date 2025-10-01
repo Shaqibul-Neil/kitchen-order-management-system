@@ -16,7 +16,14 @@ const router = createBrowserRouter([
     path: "/",
     Component: Root,
     children: [
-      { index: true, Component: Home },
+      {
+        index: true,
+        Component: Home,
+        loader: async () => {
+          const res = await fetch("/orders.json");
+          return res.json();
+        },
+      },
       { path: "orders", Component: Orders },
       { path: "foods", Component: Foods },
       { path: "tables", Component: Tables },

@@ -1,5 +1,5 @@
-const KitchenContext = () => {
-  return <div></div>;
-};
+import { createContext } from "react";
+
+const KitchenContext = createContext([]);
 
 export default KitchenContext;
