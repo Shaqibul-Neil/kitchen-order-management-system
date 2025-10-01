@@ -1,5 +1,6 @@
 import Cooking from "./Cooking";
 import CurrentOrders from "./CurrentOrders";
+import OrderReady from "./OrderReady";
 
 const KitchenContainer = () => {
   return (
@@ -10,6 +11,7 @@ const KitchenContainer = () => {
 
       <div className="cooking">
         <Cooking />
+        <OrderReady />
       </div>
     </div>
   );

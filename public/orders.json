@@ -6,6 +6,7 @@
     "table_no": 5,
     "quantity": 2,
     "special_instruction": "Please make it less spicy than usual, add extra raita on the side, and ensure the rice is well-cooked and fluffy.",
+    "short_instruction": "Less spicy, add raita",
     "waiterId": "W-01"
   },
   {
@@ -15,6 +16,7 @@
     "table_no": 3,
     "quantity": 1,
     "special_instruction": "Serve with fresh lemon wedges, add a small portion of garlic butter on top, and make sure it is grilled thoroughly but not burnt.",
+    "short_instruction": "Grilled with lemon",
     "waiterId": "W-02"
   },
   {
@@ -24,6 +26,7 @@
     "table_no": 7,
     "quantity": 3,
     "special_instruction": "Add extra cheese slices, do not include onions or pickles, and please toast the buns lightly so they stay crunchy.",
+    "short_instruction": "Extra cheese, no onions",
     "waiterId": "W-03"
   },
   {
@@ -33,6 +36,7 @@
     "table_no": 2,
     "quantity": 2,
     "special_instruction": "Make the sauce creamy with extra mushrooms, serve with garlic bread on the side, and sprinkle a bit of oregano on top before serving.",
+    "short_instruction": "Creamy sauce, mushrooms",
     "waiterId": "W-01"
   },
   {
@@ -42,6 +46,7 @@
     "table_no": 4,
     "quantity": 1,
     "special_instruction": "Cook it well so it is crispy outside but juicy inside, add extra salad on the side, and avoid using too much oil in the marination.",
+    "short_instruction": "Crispy and juicy",
     "waiterId": "W-04"
   },
   {
@@ -51,6 +56,7 @@
     "table_no": 6,
     "quantity": 2,
     "special_instruction": "Make the gravy thick and creamy, add a little extra butter on top before serving, and avoid making it too sweet.",
+    "short_instruction": "Thick creamy gravy",
     "waiterId": "W-02"
   },
   {
@@ -60,6 +66,137 @@
     "table_no": 8,
     "quantity": 1,
     "special_instruction": "Use fresh romaine lettuce, add extra parmesan cheese, keep the croutons crunchy, and serve the dressing on the side.",
+    "short_instruction": "Fresh lettuce, parmesan",
     "waiterId": "W-03"
+  },
+  {
+    "id": 8,
+    "order_no": "ORD-1008",
+    "order_title": "Chicken Biryani",
+    "table_no": 9,
+    "quantity": 2,
+    "special_instruction": "Spicy level medium, add extra mint chutney, and ensure chicken is tender and rice is fluffy.",
+    "short_instruction": "Medium spicy, mint",
+    "waiterId": "W-01"
+  },
+  {
+    "id": 9,
+    "order_no": "ORD-1009",
+    "order_title": "Grilled Fish",
+    "table_no": 1,
+    "quantity": 1,
+    "special_instruction": "Serve with buttered vegetables, avoid overcooking, and garnish with fresh herbs and lemon wedges.",
+    "short_instruction": "Butter veggies, herbs",
+    "waiterId": "W-02"
+  },
+  {
+    "id": 10,
+    "order_no": "ORD-1010",
+    "order_title": "Cheese Burger",
+    "table_no": 10,
+    "quantity": 2,
+    "special_instruction": "Include extra cheddar, do not add onions or pickles, lightly toast the buns and keep them warm.",
+    "short_instruction": "Extra cheddar, toasted",
+    "waiterId": "W-03"
+  },
+  {
+    "id": 11,
+    "order_no": "ORD-1011",
+    "order_title": "Pasta Alfredo",
+    "table_no": 5,
+    "quantity": 1,
+    "special_instruction": "Creamy sauce with parmesan cheese, serve warm with garlic bread, sprinkle oregano for taste.",
+    "short_instruction": "Creamy parmesan sauce",
+    "waiterId": "W-01"
+  },
+  {
+    "id": 12,
+    "order_no": "ORD-1012",
+    "order_title": "Tandoori Chicken",
+    "table_no": 6,
+    "quantity": 2,
+    "special_instruction": "Golden crispy outside, juicy inside, serve with extra salad and light marination.",
+    "short_instruction": "Golden crispy chicken",
+    "waiterId": "W-04"
+  },
+  {
+    "id": 13,
+    "order_no": "ORD-1013",
+    "order_title": "Paneer Butter Masala",
+    "table_no": 7,
+    "quantity": 3,
+    "special_instruction": "Thick creamy gravy, extra butter on top, slightly more cream, and avoid making it too sweet.",
+    "short_instruction": "Extra creamy gravy",
+    "waiterId": "W-02"
+  },
+  {
+    "id": 14,
+    "order_no": "ORD-1014",
+    "order_title": "Caesar Salad",
+    "table_no": 8,
+    "quantity": 1,
+    "special_instruction": "Extra parmesan cheese, keep croutons crunchy, serve dressing on the side, use fresh lettuce.",
+    "short_instruction": "Parmesan, crunchy croutons",
+    "waiterId": "W-03"
+  },
+  {
+    "id": 15,
+    "order_no": "ORD-1015",
+    "order_title": "Chicken Biryani",
+    "table_no": 2,
+    "quantity": 3,
+    "special_instruction": "Less spicy, add raita on the side, make sure rice and chicken are cooked perfectly.",
+    "short_instruction": "Less spicy, raita",
+    "waiterId": "W-01"
+  },
+  {
+    "id": 16,
+    "order_no": "ORD-1016",
+    "order_title": "Grilled Fish",
+    "table_no": 3,
+    "quantity": 2,
+    "special_instruction": "Grilled perfectly, serve with lemon wedges and butter sauce, ensure fish is moist inside.",
+    "short_instruction": "Perfectly grilled fish",
+    "waiterId": "W-02"
+  },
+  {
+    "id": 17,
+    "order_no": "ORD-1017",
+    "order_title": "Cheese Burger",
+    "table_no": 4,
+    "quantity": 1,
+    "special_instruction": "Extra cheese, no pickles, lightly toasted buns, serve with ketchup and mustard.",
+    "short_instruction": "Extra cheese, no pickles",
+    "waiterId": "W-03"
+  },
+  {
+    "id": 18,
+    "order_no": "ORD-1018",
+    "order_title": "Pasta Alfredo",
+    "table_no": 9,
+    "quantity": 2,
+    "special_instruction": "Creamy sauce with extra mushrooms, serve with garlic bread, sprinkle oregano on top.",
+    "short_instruction": "Creamy sauce, mushrooms",
+    "waiterId": "W-01"
+  },
+  {
+    "id": 19,
+    "order_no": "ORD-1019",
+    "order_title": "Tandoori Chicken",
+    "table_no": 10,
+    "quantity": 1,
+    "special_instruction": "Crispy outside, juicy inside, extra salad, light oil in marination, serve hot.",
+    "short_instruction": "Crispy, juicy chicken",
+    "waiterId": "W-04"
+  },
+  {
+    "id": 20,
+    "order_no": "ORD-1020",
+    "order_title": "Paneer Butter Masala",
+    "table_no": 1,
+    "quantity": 2,
+    "special_instruction": "Thick gravy, extra butter on top, slightly more cream, avoid making it too sweet, serve warm.",
+    "short_instruction": "Thick creamy butter",
+    "waiterId": "W-02"
   }
 ]

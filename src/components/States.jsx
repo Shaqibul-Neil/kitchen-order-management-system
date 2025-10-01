@@ -3,7 +3,7 @@ import { useContext } from "react";
 import KitchenContext from "./Root/KitchenContext/KitchenContext";
 
 const States = () => {
-  const totalOrders = useContext(KitchenContext);
+  const { ordersData, cookingItems } = useContext(KitchenContext);
 
   return (
     <div className="states">
@@ -14,7 +14,7 @@ const States = () => {
           <div className="text-xl text-center">
             Current Orders
             <h2 className="text-4xl lg:text-6xl font-bold">
-              {totalOrders.length}
+              {ordersData.length}
             </h2>
           </div>
         </div>
@@ -26,7 +26,9 @@ const States = () => {
           <CookingPot className="icons" />
           <div className="text-xl text-center">
             Cooking
-            <h2 className="text-4xl lg:text-6xl font-bold">0</h2>
+            <h2 className="text-4xl lg:text-6xl font-bold">
+              {cookingItems.length}
+            </h2>
           </div>
         </div>
       </div>

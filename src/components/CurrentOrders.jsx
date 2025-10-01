@@ -3,13 +3,13 @@ import KitchenContext from "./Root/KitchenContext/KitchenContext";
 import Order from "./Order";
 
 const CurrentOrders = () => {
-  const orders = useContext(KitchenContext);
+  const { ordersData } = useContext(KitchenContext);
 
   return (
     <div>
       <h2 className="kitchen-Container-Title">Current Orders</h2>
-      <div className="space-y-4">
-        {orders.map((order) => (
+      <div className="space-y-4 mt-12">
+        {ordersData.map((order) => (
           <Order key={order.id} order={order} />
         ))}
       </div>
