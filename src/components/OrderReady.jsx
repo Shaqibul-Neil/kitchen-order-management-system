@@ -3,11 +3,8 @@ import KitchenContext from "./Root/KitchenContext/KitchenContext";
 
 const OrderReady = () => {
   const { readyItems } = useContext(KitchenContext);
-  const time = new Date().toLocaleString("en-US", {
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
-  });
+  // console.log(readyItems);
+
   return (
     <div>
       <h2 className="kitchen-Container-Title mb-12">Order Ready</h2>
@@ -35,7 +32,7 @@ const OrderReady = () => {
           {/* Cooking Time */}
           <p className="text-[#1D232A] mt-2">
             <span className="font-semibold">Cooking Time : </span>
-            {time}
+            {order.cookedAt}
           </p>
         </div>
       ))}

@@ -31,6 +31,12 @@ const Home = () => {
   };
 
   const handleClickOnCooking = (newReady) => {
+    //creating order completion time
+    newReady.cookedAt = new Date().toLocaleTimeString("en-US", {
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+    });
     //add items to the ready section
     const newReadyItems = [...readyItems, newReady];
     setReadyItems(newReadyItems);
