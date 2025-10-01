@@ -3,7 +3,10 @@ import { useContext } from "react";
 import KitchenContext from "./Root/KitchenContext/KitchenContext";
 
 const States = () => {
-  const { ordersData, cookingItems } = useContext(KitchenContext);
+  const { ordersData, cookingItems, readyItems } = useContext(KitchenContext);
+
+  const conditionalLength = (arr) =>
+    arr.length <= 9 ? `0${arr.length}` : arr.length;
 
   return (
     <div className="states">
@@ -14,7 +17,7 @@ const States = () => {
           <div className="text-xl text-center">
             Current Orders
             <h2 className="text-4xl lg:text-6xl font-bold">
-              {ordersData.length}
+              {conditionalLength(ordersData)}
             </h2>
           </div>
         </div>
@@ -27,7 +30,7 @@ const States = () => {
           <div className="text-xl text-center">
             Cooking
             <h2 className="text-4xl lg:text-6xl font-bold">
-              {cookingItems.length}
+              {conditionalLength(cookingItems)}
             </h2>
           </div>
         </div>
@@ -39,7 +42,9 @@ const States = () => {
           <Soup className="icons" />
           <div className="text-xl text-center">
             Order Ready
-            <h2 className="text-4xl lg:text-6xl font-bold">0</h2>
+            <h2 className="text-4xl lg:text-6xl font-bold">
+              {conditionalLength(readyItems)}
+            </h2>
           </div>
         </div>
       </div>

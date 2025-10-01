@@ -8,15 +8,15 @@ const Cooking = () => {
   //   quantity: 2,
   //   special_instruction: "Extra cheese, no garlic",
   // };
-  const { cookingItems } = useContext(KitchenContext);
+  const { cookingItems, handleClickOnCooking } = useContext(KitchenContext);
   // console.log(cookingItems);
 
   return (
     <div>
-      <h2 className="kitchen-Container-Title">Cooking Now</h2>
+      <h2 className="kitchen-Container-Title mb-12">Cooking Now</h2>
       {cookingItems.map((order) => (
         <div
-          className="rounded-xl p-5 shadow mt-12"
+          className="rounded-xl p-5 shadow  my-4"
           style={{
             background:
               "url('/cook-bg.gif'), linear-gradient(to left, #b88600, #fcb700, #ffdd66)",
@@ -27,13 +27,13 @@ const Cooking = () => {
           key={order.id}
         >
           {/* Title */}
-          <h3 className="text-xl font-bold text-amber-800 mb-2">
+          <h3 className="text-xl font-bold text-amber-900 mb-2">
             {order.order_title}
           </h3>
 
           {/* Quantity */}
           <p className="text-lg font-semibold text-amber-800">
-            Quantity: <span className="text-[#1D232A]">{order.quantity}</span>
+            Quantity: <span className="text-[#1D232A]">0{order.quantity}</span>
           </p>
 
           {/* Special Instruction */}
@@ -42,7 +42,10 @@ const Cooking = () => {
           </p>
 
           {/* Static Button */}
-          <button className="px-6 mt-3 py-1 shadow text-sm bg-[#1D232A] cursor-pointer rounded-xl">
+          <button
+            className="px-6 mt-3 py-1 shadow text-sm bg-[#1D232A] cursor-pointer rounded-xl"
+            onClick={() => handleClickOnCooking(order)}
+          >
             Cooked?
           </button>
         </div>
